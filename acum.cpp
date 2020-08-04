@@ -9,7 +9,8 @@ int main()
 	char url[]="http://www.kidsmathgamesonline.com/images/pictures/numbers600/number";
 	short int acumulador[10];
 	short int i,total;
-	        
+	short N;
+	N=25000        
     printf("Acumulador decimais de pi");
    
 
@@ -37,11 +38,12 @@ int main()
 	for(i=0;i<10;i++) acumulador[i]=0;
 	
 	total=0;
-	while (total!=25000) {
+	while (total!=N) {
 	
 	for(i=0;i<10;i++) 
 		{		
 				caracter=fgetc(fp);
+				//Sumamos os acumulados de cada cifra
 				while(caracter != ' ') {	
 					
 					switch(caracter) {
