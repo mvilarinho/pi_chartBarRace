@@ -16,7 +16,7 @@ int main()
    
 
 	// Crear o ficheiro de entrada
-	fp = fopen ( "/home/mint/Escritorio/pi/pi.txt", "r" );        
+	fp = fopen ( "./pi.txt", "r" );        
 	if (fp==NULL) {fputs ("File error",stderr); exit (1);}
 	// Crear o ficheiro de saida
 	fw = fopen ( "/home/mint/Escritorio/pi/piAcumulado.txt", "w+" );        
